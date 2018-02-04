@@ -7,6 +7,8 @@ this is the application that shows list of commedy live schedule.
 3. Create pages that shows live schedule.
 4. Return proper page to each request.
 
+![ws000357](https://user-images.githubusercontent.com/35652396/35775704-4e4414b2-09d1-11e8-863b-e6cd808c3bd2.JPG)
+
 ##  Tools to realize this architecture
 1. Requests/BeautifulSoup  
     →**Web scraping**
