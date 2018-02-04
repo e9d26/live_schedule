@@ -1,6 +1,6 @@
 # live_schedule
 **Attention!**
-**this application is being created, and not finished!**
+**this application is being created, and not finished!**  
 this is the application that shows list of commedy live schedule.
 
 ##  Architecture overview
