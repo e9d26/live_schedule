@@ -4,7 +4,7 @@
   {% for schedule in schedules %}
       <div class="schedule">
           <div class="date">
-              {{ schedule.date }}
+              {{ schedule.date }} {{ schedule.start_at }}
           </div>
           <h1>{{ schedule.title }}</h1>
           <p>{{ schedule.text|linebreaks }}</p>
