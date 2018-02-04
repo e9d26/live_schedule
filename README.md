@@ -22,9 +22,13 @@ this is the application that shows list of commedy live schedule.
 * django  2.0.2
 
 ## Additional Package
-* httpd-devel  
+* request  (for **get html**)  
+`pip install requests`  
+* lxml  (for **parse html**)  
+`pip install lxml`  
+* httpd-devel  (for **apache server**)  
 `yum install httpd-devel`
-* mod_wsgi 4.5.14  
+* mod_wsgi 4.5.14  (for **federate**)  
 `wget https://github.com/GrahamDumpleton/mod_wsgi/archive/4.5.14.tar.gz`  
 `tar -zxvf 4.5.14.tar.gz`  
 `cd mod_wsgi-4.5.14/`  
