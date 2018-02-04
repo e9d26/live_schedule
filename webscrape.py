@@ -1,14 +1,19 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 url = "http://www.yoshimoto.co.jp/mugendai/schedule02.php"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'lxml')
-with open('schedule.text', 'w') as file:
-    file.write(soup.text)
+schedule_pc = soup.find("div", {"id": "schedule_pc"})
+contents = schedule_pc.find_all('ul')
+for content in contents:
+    time = content.find(re.compile("\d"))
+    with open('test.text', 'a') as file:
+        file.write(str(time))
 
-soup = BeautifulSoup(response.content, 'html.parser')
-    bs = BeautifulSoup(response.text, "lxml")
-bs = BeautifulSoup(response.text, "lxml")
+schedule = {}
+
+
 topics = bs.select('.fl, .fr')
 news_topics = {}
 for news in topics:
